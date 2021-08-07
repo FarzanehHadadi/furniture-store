@@ -1,7 +1,7 @@
 export const Categories = [
   {
     id: 1,
-    name: "مبلمان خانگی",
+    category: "مبلمان خانگی",
     products: [
       {
         title: "سرویس مبلمان",
@@ -25,7 +25,7 @@ export const Categories = [
   },
   {
     id: 2,
-    name: "اداری و رستوران",
+    category: "اداری و رستوران",
     products: [
       {
         title: "مبلمان اداری",
@@ -48,7 +48,7 @@ export const Categories = [
   },
   {
     id: 3,
-    name: "دکوراسیون داخلی",
+    category: "دکوراسیون داخلی",
     products: [
       {
         title: "تزیینات کف",

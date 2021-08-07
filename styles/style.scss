@@ -16,9 +16,8 @@ $transform-direction :-1;
 body{
     direction: $direction;
 }
-nav{
-    display: flex;
-    h3{
-        margin-right: 1rem;
-    }
+.Navbar{
+  .nav-top{
+      display: flex;
+  }
 }
