@@ -3,15 +3,7 @@
 @import "fonts.min";
 
 /*** RTL websites ***/
-$direction: rtl;
-$opposite-direction: ltr;
 
-$start-direction: right;
-$end-direction: left;
-$titr-font: "BTitrBold", "Courier New", Courier, monospace;
-$text-font: "BNazanin", "Times New Roman", Courier, monospace;
-$slang-font: "BTitrTGEBold", Arial, Helvetica, sans-serif;
-$transform-direction: -1;
 body {
   direction: $direction;
   color: $color-dark-liver;
@@ -97,5 +89,35 @@ a {
 .nav-icons-links {
   a {
     @extend %link-template;
+  }
+}
+.navbar-menus {
+  @extend %link-template;
+  color: $color-dark-liver !important;
+  box-shadow: 2px 6px 9px 0px rgba(50, 47, 47, 0.75);
+  -webkit-box-shadow: 2px 6px 9px 0px rgba(50, 47, 47, 0.75);
+  -moz-box-shadow: 2px 6px 9px 0px rgba(50, 47, 47, 0.75);
+  .dropdown-toggle {
+    color: $color-dark-liver;
+  }
+  .product-title {
+    color: $color-dark-liver;
+    text-align: right;
+    font-weight: bold;
+  }
+  .dropdown-item {
+    display: flex;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+  }
+  a {
+    @extend %link-template;
+  }
+  .dropdown-toggle:hover {
+    .dropdown-menu {
+      display: block;
+      margin-top: 0; // remove the gap so it doesn't close
+    }
   }
 }
