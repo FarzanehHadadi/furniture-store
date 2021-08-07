@@ -1,9 +1,7 @@
-$color:red;
-$color-pale-pink:#ffdbda;
-$color-shimmering-blush:#DB7F8E;
-$color-dark-liver:#604D53;
-$color-quick-silver:#9DA3A4;
-$color-black-shadows:#D5C5C8;
+@import 'media-screen';
+@import 'variable';
+
+
 
 /*** RTL websites ***/
 $direction :rtl;
@@ -16,8 +14,41 @@ $transform-direction :-1;
 body{
     direction: $direction;
 }
+a{
+    text-decoration: none;
+}
 .Navbar{
-  .nav-top{
-      display: flex;
-  }
+  padding: 1rem;
+}
+ %flex-display{
+     display:flex;
+ } 
+.nav-header {
+            .nav-header-links 
+            ,.nav-contact-links {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+            }
+            
+    
+    .nav-header-links,
+    .nav-contact-links {
+        a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color:$color-dark-liver;
+            }
+    }
+   .nav-title{
+       display:none;
+   }
+   .vertical-seprator{
+       width: 2px;
+       height:30px;
+       margin-left:0.2rem;
+       margin-right:0.2rem;
+       background:$color-quick-silver;
+       display:none;
+   }
 }

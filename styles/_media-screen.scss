@@ -1,0 +1,21 @@
+@import 'variable';
+
+@media screen and (min-width:662px) {
+    .nav-header {
+         display: flex;
+        justify-content: space-between;
+
+      
+         .nav-title {
+             display: block !important;
+             padding: 0 0.2rem;
+             background: $color-light-blue;
+             border-radius: 2px;
+            }
+            .vertical-seprator {
+    display: block !important;
+
+}
+
+    }
+}

@@ -5,11 +5,11 @@ import NavbarMenus from "./NavbarMenus";
 
 const NavbarComponent = () => {
   return (
-    <Navbar className="Navbar">
+    <nav className="Navbar">
       <NavbarHeader />
       <NavbarMainContent />
       <NavbarMenus />
-    </Navbar>
+    </nav>
   );
 };
 

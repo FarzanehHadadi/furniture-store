@@ -2,8 +2,8 @@ import Link from "next/link";
 import { FaShuttleVan, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const NavbarHeader = () => (
-  <div className="nav-top">
-    <div className="icon-links">
+  <div className="nav-header">
+    <div className="nav-header-links">
       <Link href="">
         <a>
           <FaShuttleVan /> پیگیری سفارش
@@ -25,21 +25,17 @@ const NavbarHeader = () => (
     <div className="nav-title">
       <p>بهترین محصولات چوبی را از ما بخواهید.</p>
     </div>
-    <div className="simple-links">
+    <div className="nav-contact-links">
       <Link href="">
         <a>همکاری با ما</a>
       </Link>
       <div className="vertical-seprator"></div>
       <Link href="">
-        <a>
-          <FaEnvelope /> سفارش خاص
-        </a>
+        <a>سفارش خاص</a>
       </Link>
       <div className="vertical-seprator"></div>
       <Link href="">
-        <a>
-          <FaMapMarkerAlt /> بلاگ
-        </a>
+        <a>بلاگ</a>
       </Link>
     </div>
   </div>
