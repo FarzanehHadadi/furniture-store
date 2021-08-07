@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BTitrTGEBold';
+    src: url('../fonts/BTitrTGEBold.eot?#') format('eot'), url('../fonts/BTitrTGEBold.woff') format('woff'), url('../fonts/BTitrTGEBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BTitrBold';
+    src: url('../fonts/BTitrBold.eot?#') format('eot'), url('../fonts/BTitrBold.woff') format('woff'), url('../fonts/BTitrBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BNazanin';
+    src: url('../fonts/BNazanin.eot?#') format('eot'), url('../fonts/BNazanin.woff') format('woff'), url('../fonts/BNazanin.ttf') format('truetype');
+}

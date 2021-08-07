@@ -5,16 +5,18 @@ import { GiShoppingCart } from "react-icons/gi";
 import { FaSearch, FaRegBell, FaRegHeart } from "react-icons/fa";
 const NavbarMainContent = () => {
   return (
-    <div className="nav-middle-level">
-      <Image src="/logo.png" alt="furniture" width={50} height={50} />
-
-      <Link href="/">
-        <a>
-          <h3>فروشگاه آنلاین ایران چوب</h3>
-        </a>
-      </Link>
+    <div className="nav-main-content">
+      <div className="logo">
+        <Image src="/logo.png" alt="furniture" width={50} height={50} />
+        <Link href="/" className="logo-title">
+          <a>
+            <p>فروشگاه آنلاین ایران چوب</p>
+          </a>
+        </Link>
+      </div>
       <form>
         <button
+          className="search-btn"
           onClick={() => {
             console.log("i am search button");
           }}
@@ -23,9 +25,9 @@ const NavbarMainContent = () => {
           <FaSearch />
         </button>
 
-        <input type="text" placeholder="جستجو"></input>
+        <input type="text" className="search-area" placeholder="جستجو"></input>
       </form>
-      <div className="only-icons-links">
+      <div className="nav-icons-links">
         <Link href="">
           <a>
             <FaRegBell />
