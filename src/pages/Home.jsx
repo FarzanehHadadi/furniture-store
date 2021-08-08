@@ -1,7 +1,13 @@
+import CarouselHome from "../components/CarouselHome";
+
 const Home = () => {
   //
 
-  return <div>i am home page</div>;
+  return (
+    <div>
+      <CarouselHome />
+    </div>
+  );
 };
 
 export default Home;

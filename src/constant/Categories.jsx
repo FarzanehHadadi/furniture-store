@@ -100,3 +100,33 @@ export const Categories = [
     ],
   },
 ];
+export const carouselContent = [
+  {
+    id: 1,
+    title: "تخفیف ویژه",
+    description: "تخفیف شگت انگیز در محصولات کلاسیک",
+    img: "/img/offer.jpg",
+    position: "center",
+  },
+  {
+    id: 2,
+    title: "ارسال سریع",
+    description: "ارسال به موقع برابر است با احترام به مشتری",
+    img: "/img/shipping.jpg",
+    position: "right",
+  },
+  {
+    id: 3,
+    title: "امکان خرید قسطی",
+    description: "امروز خرید کنید سال بعد پرداخت کنید",
+    img: "/img/payment.jpg",
+    position: "left",
+  },
+  {
+    id: 4,
+    title: "پشتیبانی 24 ساعته",
+    description: "در هر ساعتی از شبانه روز تماس بگیرید.",
+    img: "/img/support.jpg",
+    position: "center",
+  },
+];
