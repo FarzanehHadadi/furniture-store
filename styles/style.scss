@@ -13,6 +13,7 @@ body {
 }
 a {
   text-decoration: none !important;
+  font-family: $text-font !important;
 }
 .Navbar {
   padding: 1rem;
@@ -159,3 +160,24 @@ a {
   opacity: 1;
 }
 /* End of fix */
+.banner {
+  width: 90vw;
+
+  h4 {
+    text-align: center;
+    color: $color-dark-liver;
+    font-family: $titr-font;
+    margin-bottom: 1rem;
+  }
+
+  &-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/img/banner-img.jpg") center/cover no-repeat;
+    padding: 3rem 6rem !important;
+    font-size: 1.5rem;
+    color: $color-shimmering-blush;
+    span {
+      color: $color-light-blue;
+    }
+  }
+}

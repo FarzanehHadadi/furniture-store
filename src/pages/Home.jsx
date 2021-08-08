@@ -1,3 +1,4 @@
+import Banner from "../components/Banner";
 import CarouselHome from "../components/CarouselHome";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
   return (
     <div>
       <CarouselHome />
+      <Banner />
     </div>
   );
 };

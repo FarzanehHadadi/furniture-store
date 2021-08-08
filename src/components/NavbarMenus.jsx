@@ -1,13 +1,18 @@
 import { Categories } from "../constant/Categories";
 import Link from "next/link";
 import { NavDropdown } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const NavbarMenus = () => {
   return (
     <div className="navbar-menus">
       {Categories.map((cat) => {
         return (
-          <NavDropdown title={cat.category} id={cat.id}>
+          <NavDropdown
+            title={cat.category}
+            id={cat.id}
+            className="nav-item dropleft"
+          >
             <NavDropdown.Item>
               {cat.products.map((prod) => {
                 return (
