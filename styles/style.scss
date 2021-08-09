@@ -17,10 +17,14 @@ body {
 :root {
   font-family: $text-font !important;
 }
-a {
+a,
+ul {
   text-decoration: none !important;
   font-family: $text-font !important;
+  list-style-type: none;
+  color: $color-dark-liver !important;
 }
+
 .Navbar {
   padding: 1rem;
 }
@@ -51,14 +55,14 @@ a {
     display: none;
     font-family: $text-font;
   }
-  .vertical-seprator {
-    width: 2px;
-    height: 30px;
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-    background: $color-quick-silver;
-    display: none;
-  }
+}
+.vertical-seprator {
+  width: 2px;
+  height: 30px;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  background: $color-quick-silver;
+  display: none;
 }
 .nav-main-content {
   margin: 1rem 0;
@@ -167,11 +171,11 @@ a {
 }
 /* End of fix */
 .banner {
-  width: 90vw;
+  width: 85vw;
 
   h4 {
     text-align: center;
-    color: $color-dark-liver;
+    color: $color-navy-blue;
     font-family: $titr-font;
     margin-bottom: 1rem;
   }
@@ -192,50 +196,29 @@ a {
   }
 }
 .section {
-  max-width: 90vw;
   margin: 2rem auto;
+  max-width: 85vw;
   &-title {
-    text-align: center;
+    text-align: right;
     font-family: $titr-font;
-    color: $color-dark-liver;
+    color: $color-navy-blue;
     margin-bottom: 1rem;
   }
 }
 
-// .home-agencies-img {
-//   position: relative;
-//   &::before {
-//     content: "";
-//     display: block;
-//     border: red solid 5px;
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     left: -1.5rem;
-//     top: -1.5rem;
-//     z-index: -1;
-//   }
-// }
-
 .home-agencies {
   font-family: $text-font;
   color: $color-dark-liver;
-  display: flex;
-  max-width: 85%;
   font-size: 1.2rem;
   line-height: 1.2;
-  justify-content: space-around;
-  .home-agencies-description {
-    flex: 0 1 50%;
-    align-self: center;
-  }
 }
 
 .home-agencies-img,
 .home-agencies-picture {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  display: none;
 }
 .home-agencies-img::before,
 .home-agencies-picture::before {
@@ -254,7 +237,114 @@ a {
   background: $color-pale-pink;
   font-weight: bold;
   padding: 0.6rem 1rem;
-  color: $color-quick-silver;
+  color: $color-navy-blue;
   font-size: 1.6rem;
   margin-top: 1rem;
+  border: none;
+  outline: none;
+}
+footer {
+  background: $color-light-grey;
+  padding: 2rem;
+  padding-top: 1rem;
+  font-family: $text-font;
+  color: $color-dark-liver;
+  .phone-number {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+  }
+  > .footer-title {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    > h4 {
+      font-family: $slang-font;
+      font-size: 2rem;
+      color: $color-navy-blue;
+    }
+  }
+  .footer-header {
+    .footer-support {
+      > p {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .footer-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    margin: 1rem 0;
+    color: $color-dark-liver;
+    > article {
+      text-align: center;
+      > p {
+        font-size: 1.2rem;
+      }
+      > .footer-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: $color-light-blue;
+      }
+    }
+  }
+  .footer-info-container {
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .footer-info {
+      > h5 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .social-links {
+    > h5 {
+      font-size: 1.5rem;
+    }
+    .social-link {
+      margin-left: 1rem;
+      font-size: 1.5rem;
+    }
+    .telegram {
+      color: $color-telegram;
+    }
+    .instagram {
+      color: $color-instagram;
+    }
+    .twitter {
+      color: $color-twitter;
+    }
+    .facebook {
+      color: $color-facebook;
+    }
+  }
+  .footer-form-input {
+    padding: 0.3rem 1rem;
+    margin-left: 0.4rem;
+    outline: none;
+    background: $color-quick-silver;
+    border: none;
+    width: 200px;
+    &::placeholder {
+      color: $color-navy-blue;
+      font-size: 1rem;
+      font-family: $text-font;
+      direction: ltr;
+    }
+  }
+  .footer-form-btn {
+    padding: 0.3rem 1rem;
+    outline: none;
+    background: $color-quick-silver;
+    border: none;
+    color: $color-navy-blue;
+    font-size: 1.2rem;
+    font-family: $text-font;
+    transition: background 0.5s ease;
+    &:hover {
+      background: lighten($color-quick-silver, 10%);
+    }
+  }
 }

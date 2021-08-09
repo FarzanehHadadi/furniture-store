@@ -11,9 +11,9 @@
       background: $color-light-blue;
       border-radius: 2px;
     }
-    .vertical-seprator {
-      display: block !important;
-    }
+  }
+  .vertical-seprator {
+    display: block !important;
   }
   .nav-main-content {
     display: flex;
@@ -24,5 +24,50 @@
   }
   .navbar-menus {
     display: flex;
+  }
+  .footer-icons {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .footer-header {
+    display: flex;
+    justify-content: space-between;
+    .footer-support {
+      display: flex;
+    }
+  }
+  .home-agencies {
+    display: flex;
+    max-width: 1080px !important;
+    justify-content: space-around;
+    .home-agencies-description {
+      flex: 0 1 calc(50% - 20px);
+      margin-top: 1rem !important;
+    }
+    .home-agencies-img,
+    .home-agencies-picture {
+      align-self: center;
+      display: block !important;
+      margin-top: 1rem !important;
+    }
+  }
+  .section {
+    max-width: 90vw;
+    &-title {
+      text-align: center !important;
+    }
+  }
+  .footer-info-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .footer-links {
+    display: flex;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer-icons {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+  .footer-info-container {
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 }
